@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #1f1f1f; 
+  --secondary-color: rgb(43, 205, 238); 
+  --background-color: #1f2833; 
+  --text-color: #ffffff; 
+  --accent-color: #ff0000; 
+  --border-color: #0a192f; 
+}
+
+.footer {
+  background-color: #9ae2f61b;
+  padding: 40px 20px 20px;
+  color: var(--text-color);
+  text-align: center;
+  border-top: 2px solid rgb(43, 205, 238);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: rgb(43, 205, 238);
+}
+
+.footer-section p ,
+.footer-section p a {
+  font-size: 15px;
+  margin: 5px 0;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+.footer-section a {
+  color: rgb(43, 205, 238);
+  transition: color 0.3s ease;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color:  rgb(174, 230, 241);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: rgb(174, 230, 241);
+}
+
+.footer-divider {
+  width: 80%;
+  height: 1px;
+  background-color: gray;
+  margin: 20px auto;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color:white;
+  font-size: 24px;
+  
+}
+
+.social-icons a:hover {
+  color: rgb(43, 205, 238);
+}
+
+.icon-wrapper {
+  position: relative;
+  padding: 10px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.3);
+  transition: transform 0.5s ease-in-out;
+}
+
+.icon-wrapper img {
+  width: 35px;
+  height: 35px;
+  display: block;
+}

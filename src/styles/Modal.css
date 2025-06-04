@@ -1,0 +1,104 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto; /* allow scrolling if modal is taller than screen */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* for spacing around modal on small screens */
+}
+
+.modal {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh; /* limit modal height */
+  overflow-y: auto; /* scroll inside modal if needed */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal input[type="text"],
+.modal input[type="number"],
+.modal input[type="file"],
+.modal textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal input[type="file"] {
+  padding: 4px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 40%;
+}
+
+.modal-actions button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(0, 128, 0, 0.781);
+  color: white;
+  cursor: pointer;
+}
+
+.modal-actions button.cancel {
+  background-color: #6c757d;
+}
+
+.modal-actions button:hover {
+  opacity: 0.9;
+}
+
+/* Image Previews */
+.modal img {
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Colors */
+.color-tag {
+  display: inline-flex;
+  align-items: center;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 4px 8px;
+  margin: 4px;
+  font-size: 14px;
+}
+
+.color-tag span {
+  margin-right: 8px;
+}
+
+.color-tag button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}

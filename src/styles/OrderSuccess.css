@@ -1,0 +1,43 @@
+.order-success-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  color: gray;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.order-success-container h2 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.order-success-container h3,
+.order-success-container h4 {
+  color: #00bcd4;
+  margin: 10px 0;
+}
+
+.order-success-container p {
+  margin: 5px 0;
+  color: gray;
+}
+
+.order-success-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-success-button:hover {
+  background-color: #009cb3;
+}

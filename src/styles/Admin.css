@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #0b1b32;
+  --secondary-color: #00bfff;
+  --background-color: #909192;
+  --text-color: #ffffff;
+  --accent-color: #ffea75;
+}
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.admin-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.admin-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.admin-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  min-width: 220px;
+}
+
+.admin-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.admin-card-icon {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.admin-card-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.admin-card.logout {
+  background-color: #ffe5e5;
+}
+
+.admin-card.logout .admin-card-text {
+  color: #c62828;
+}
+
+.admin-card.logout .admin-card-icon {
+  color: #c62828;
+}

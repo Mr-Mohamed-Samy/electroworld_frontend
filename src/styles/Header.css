@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #0b1b32;
+  --secondary-color: #00bfff;
+  --background-color: #909192;
+  --text-color: #ffffff;
+  --accent-color: #ffea75;
+}
+
+body h1 {
+  color: white;
+}
+
+/* Header Layout */
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #1f1f1f;
+  padding: 10px 0;
+  gap: 5px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 2px solid rgb(43, 205, 238);
+  border-radius: 35px;
+  background-color: #9ae2f61b;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  flex-shrink: 0;
+}
+
+.logo_style {
+  width: 50px;
+  height: 40px;
+}
+
+.logo_text {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
+.header-bottom {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  min-width: 250px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+
+.img {
+  width: 35px;
+  height: 35px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+  z-index: 3000;
+  position: relative;
+}
+
+.icons > img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.profile-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45px;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background-color: rgba(88, 88, 88, 0.47);
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  border-radius: 8px;
+  padding: 10px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.profile-dropdown a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: background 0.3s ease;
+}
+
+.profile-dropdown a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.05);
+}
+
+.category-selector {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.category-selector select {
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: white;
+  background-color: rgba(88, 88, 88, 0.47);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.category-selector select:focus {
+  outline: none;
+}
+
+.category-selector option {
+  background-color: rgba(88, 88, 88, 0.47);
+  color: black;
+}

@@ -1,0 +1,24 @@
+.policy-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e3dede;
+  background-color: #9ae2f61b;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 2px solid #ccc;
+  
+}
+
+.policy-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.policy-container p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}

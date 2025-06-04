@@ -1,0 +1,153 @@
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.product-card {
+  width: 21vw; 
+  height: 72vh; 
+  border: 2px solid #00bcd4;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #ffffffc1;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(238, 238, 238, 0.15);
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 220px; /* أقل شوية */
+  border-radius: 6px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.product-title {
+  font-size: 1.4rem; /* أقل حجم */
+  margin: 6px 0;
+  text-align: center;
+  flex-grow: 0;
+  color: black;
+  font-weight: 600;
+}
+
+.product-price {
+  font-size: 0.9rem; /* أقل حجم */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 14px;
+  flex-grow: 0;
+}
+
+.button-row {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column; /* زر Buy Now بسطر كامل */
+  gap: 10px;
+}
+
+.btn.buy {
+  width: 100%; /* عرض كامل */
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.buy:hover {
+  background-color: #0096a9;
+}
+
+.cart-wishlist-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn.cart {
+  flex: 1;
+  background-color: #c6f2fa;
+  border: 1px solid rgb(43, 205, 238);
+  color: #00bcd4;
+  padding: 5px 5px;
+  font-size: 1.1rem; 
+  border-radius: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn.cart:hover {
+  border: 1px solid rgb(43, 205, 238);
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 40vw;
+    height: auto;
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .product-image {
+    height: 200px;
+  }
+
+  .product-title {
+    font-size: 1.2rem;
+  }
+
+  .product-price {
+    font-size: 0.9rem;
+  }
+
+  .button-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn.buy,
+  .btn.cart {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cart-wishlist-row {
+    flex-direction: row;
+  }
+}
+.product-rating {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #ffc107; 
+  text-align: center;
+  user-select: none; 
+}
+
+.star-filled {
+  color: #ffc107; 
+  margin: 0 1px;
+}
+
+.star-empty {
+  color: #ddd; 
+  margin: 0 1px;
+}

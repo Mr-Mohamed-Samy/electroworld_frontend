@@ -1,0 +1,114 @@
+.main-container-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 130vh;
+    width: 30vw;
+    margin: 40px auto;
+    background-color: rgba(88, 88, 88, 0.47);
+    box-shadow: 0 4px 6px rgb(131, 217, 234);
+    border-radius: 15px;
+    padding: 25px;
+    font-size: 1.2em;
+    color: white;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  form,
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 100%;
+  }
+  .sign-up-form select option{
+    color: black;
+  }
+  .details {
+    width: 80%;
+    padding: 12px 45px 12px 12px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .details::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .details:hover,
+  .details:focus {
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .password-wrapper {
+    position: relative;
+    width: 80%;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+  
+  .submit-btn {
+    background-color: rgb(43, 205, 238);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 85%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+  
+  .submit-btn:hover {
+    background-color: rgb(131, 217, 234);
+    transform: translateY(-2px);
+  }
+  
+  .signup {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .signup a:hover {
+    text-decoration: underline;
+    color: rgb(131, 217, 234);
+  }
+  
+  input:focus {
+    outline: none;
+  }

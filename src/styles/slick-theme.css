@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "slick";
+  src: url("/fonts/slick.woff") format("woff"),
+       url("/fonts/slick.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.slick-prev,
+.slick-next {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: black;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  opacity: 1;
+}

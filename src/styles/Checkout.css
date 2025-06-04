@@ -1,0 +1,54 @@
+.checkout-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  color: gray;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.checkout-container h2,
+.checkout-container h3,
+.checkout-container h4 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.checkout-container label {
+  display: block;
+  margin: 10px 0 5px;
+  color: gray;
+}
+
+.checkout-container select,
+.checkout-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+.checkout-container strong {
+  color: #00bcd4;
+}
+
+.checkout-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkout-container button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}

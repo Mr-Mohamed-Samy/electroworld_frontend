@@ -1,0 +1,113 @@
+.wishlist-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f7f7f737; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(43, 205, 238, 0.3);
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wishlist-container h2 {
+  color: rgb(43, 205, 238);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.wishlist-empty {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+.wishlist-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wishlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.wishlist-item:hover {
+  box-shadow: 0 0 10px rgba(43, 205, 238, 0.5);
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-details h3 {
+  margin: 0 0 5px 0;
+  color: rgb(43, 205, 238);
+ 
+}
+
+.product-details p {
+ 
+  margin: 3px 0;
+  color: #555;
+}
+
+.remove-btn {
+  background-color: rgb(170, 169, 169);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #29b3d1;
+}
+
+.remove-btn svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+
+.product-info img {
+   width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1.5px solid rgb(43, 205, 238);
+}
+
+.rating-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.stars {
+  font-size: 18px;
+  direction: ltr;
+  display: flex;
+  gap: 2px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: rgb(43, 205, 238);
+}
